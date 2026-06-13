@@ -1,3 +1,4 @@
+import nodePath from "node:path";
 import { compile } from "@tailwindcss/node";
 import { Scanner } from "@tailwindcss/oxide";
 //#region src/main.ts
@@ -14,7 +15,7 @@ const tailwindPlugin = {
 				negated: false
 			}] }).scan();
 			const compiler = await compile(content_css, {
-				base: options.source_path,
+				base: nodePath.dirname(artifact.absolute_path),
 				from: artifact.absolute_path,
 				onDependency() {}
 			});

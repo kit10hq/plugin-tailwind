@@ -20,7 +20,7 @@
 		"@tailwindcss/oxide": "4.3.0"
 	},
 	"peerDependencies": {
-		"kit10": "file:../kit10/pack-1781307886247.tar.gz"
+		"kit10": "file:/tmp/devpack/@kit10/kit10/pack-f9d1a73.tar.gz"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.10",
@@ -47,17 +47,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kit10hq/ejs.git"
+		"url": "git+https://github.com/kit10hq/plugin-tailwind.git"
 	},
 	"keywords": [
 		"kit10",
-		"vite",
-		"ejs"
+		"kit10-plugin",
+		"tailwind",
+		"tailwindcss"
 	],
 	"author": "Daniil Kirichenko (https://twitter.com/kirickme)",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/kit10hq/ejs/issues"
+		"url": "https://github.com/kit10hq/plugin-tailwind/issues"
 	},
-	"homepage": "https://github.com/kit10hq/ejs#readme"
+	"homepage": "https://github.com/kit10hq/plugin-tailwind#readme"
 }

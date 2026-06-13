@@ -1,3 +1,4 @@
+import nodePath from 'node:path';
 import { compile } from '@tailwindcss/node';
 import { Scanner } from '@tailwindcss/oxide';
 import type { Plugin } from 'kit10';
@@ -26,7 +27,7 @@ export const tailwindPlugin: Plugin = {
 			}
 
 			const compiler = await compile(content_css, {
-				base: options.source_path,
+				base: nodePath.dirname(artifact.absolute_path),
 				from: artifact.absolute_path,
 				onDependency() {
 					// do nothing
